@@ -1,0 +1,17 @@
+.vs/
+.vscode/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+*.snupkg
+packages/
+TestResults/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
