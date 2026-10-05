@@ -6,7 +6,6 @@ class Playlist
 {
     private List<string> _songs = new List<string>();
 
-    // Додаткові члени
     public int Count
     {
         get { return _songs.Count; }
@@ -129,14 +128,12 @@ class Program
         Console.WriteLine("\np1 + p2: " + all);
         Console.WriteLine("Кількість у p1 + p2: " + all.Count);
 
-        // Оператори == та !=
         Console.WriteLine("\np1 == p3: " + (p1 == p3));
         Console.WriteLine("p1 == p2: " + (p1 == p2));
         Console.WriteLine("p1 != p2: " + (p1 != p2));
         Console.WriteLine("p1.Equals(p3): " + p1.Equals(p3));
         Console.WriteLine("Хеші p1 і p3 однакові: " + (p1.GetHashCode() == p3.GetHashCode()));
 
-        // Shuffle
         all.Shuffle();
         Console.WriteLine("\nПісля Shuffle: " + all);
     }
