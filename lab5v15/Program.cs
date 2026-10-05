@@ -134,7 +134,6 @@ class Program
         Console.WriteLine("p1.Equals(p3): " + p1.Equals(p3));
         Console.WriteLine("Хеші p1 і p3 однакові: " + (p1.GetHashCode() == p3.GetHashCode()));
 
-        // Shuffle
         all.Shuffle();
         Console.WriteLine("\nПісля Shuffle: " + all);
     }
