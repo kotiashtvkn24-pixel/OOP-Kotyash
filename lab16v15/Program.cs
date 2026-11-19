@@ -15,10 +15,13 @@ class Component
     public int Id { get; set; }
     public string Name { get; set; }
     public List<Specification> Specifications { get; set; } = new List<Specification>();
+}
 
-    public string GetSpecification(string key)
+static class ComponentExtensions
+{
+    public static string GetSpecification(this Component component, string key)
     {
-        return Specifications.FirstOrDefault(s =>
+        return component.Specifications.FirstOrDefault(s =>
             s.Key.Equals(key, StringComparison.OrdinalIgnoreCase))?.Value ?? "Не знайдено";
     }
 }
